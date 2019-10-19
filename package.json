@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Personal website",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "build": "pug src/index.pug -o .",
+    "build:watch": "pug src/index.pug -o . --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1337M0nst3r/1337m0nst3r.github.io.git"
