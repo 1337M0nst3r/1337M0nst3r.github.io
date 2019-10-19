@@ -1,0 +1,27 @@
+{
+  "name": "1337m0nst3r.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1337M0nst3r/1337m0nst3r.github.io.git"
+  },
+  "keywords": [
+    "personal website",
+    "bootstrap4",
+    "pug",
+    "static website"
+  ],
+  "author": "https://github.com/1337M0nst3r/",
+  "license": "The Unlicense",
+  "bugs": {
+    "url": "https://github.com/1337M0nst3r/1337m0nst3r.github.io/issues"
+  },
+  "homepage": "https://github.com/1337M0nst3r/1337m0nst3r.github.io#readme",
+  "dependencies": {
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
