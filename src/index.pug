@@ -8,8 +8,9 @@ head
 
   title Hi there!
 
-  //- This variable specifies wheter to use a CDN or a local version of a framework
+  //- This variable specifies whether to use a CDN or a local version when dealing with frameworks
   //- When set to true the local version is used otherwise a CDN is used
+  //- NOTE: Must be set to **false** in production!
   - var isDev = true
   if isDev
     link(rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css")
@@ -23,4 +24,6 @@ body.bg-dark
     script(src="assets/vendor/jQuery/jquery-3.4.0.min.js")
     script(src="assets/vendor/bootstrap/js/bootstrap.min.js")
   else
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
     
