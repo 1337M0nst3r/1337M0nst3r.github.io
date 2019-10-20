@@ -17,8 +17,16 @@ head
   else
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
 
+  // Font(s)
+  link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap")
+
+  // Local styles
+  link(rel="stylesheet" href="assets/styles/main.css")
+
 body.bg-dark
-  p.text-primary Testing
+
+  .jumbotron.jumbotron-fluid.bg-danger.text-center
+    h1.display-4 Call me Sam.
 
   if isDev
     script(src="assets/vendor/jQuery/jquery-3.4.0.min.js")
