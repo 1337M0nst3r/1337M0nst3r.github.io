@@ -25,8 +25,23 @@ head
 
 body.bg-dark
 
-  .jumbotron.jumbotron-fluid.bg-danger.text-center
-    h1.display-4 Call me Sam.
+  .jumbotron.jumbotron-fluid.text-center.bg-dark.mb-1
+    h1.display-1.text-teal I'm Sam!
+    span.badge.badge-teal-light.p-2.mx-2(style="font-size: 1.1em;") Web dev
+    span.badge.badge-teal.p-2.mx-2(style="font-size: 1.1em;") Linux
+    span.badge.badge-teal-dark.p-2.mx-2(style="font-size: 1.1em;") Scripting
+  
+  .container
+    .row.p-4
+      .col-4.text-center
+        h1 #[span.text-light #]About
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .col-4.text-center
+        h1.display-4 #[span.text-light #]What I do
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .col-4.text-center
+        h1 #[span.text-light #]Get in touch
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   if isDev
     script(src="assets/vendor/jQuery/jquery-3.4.0.min.js")
