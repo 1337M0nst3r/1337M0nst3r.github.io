@@ -11,6 +11,10 @@ body {
   color: var(--teal);
 }
 
+.text-teal-dark {
+  color: #1CB084;
+}
+
 .badge-teal-light {
   background-color: #27DDA7;
 }
