@@ -1,6 +1,7 @@
 {
   "name": "1337m0nst3r.github.io",
   "version": "1.0.0",
+  "private": true,
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
