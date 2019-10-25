@@ -23,28 +23,24 @@ head
   // Local styles
   link(rel="stylesheet" href="assets/styles/main.css")
 
-body.bg-dark.mb-1
+body.bg-dark.text-light.mb-1
 
-  .jumbotron.jumbotron-fluid.text-center.bg-dark.h-100
-    h1.display-1.text-light.mt-4 I'm Sam!
-    span.badge.text-teal-dark.p-2.mx-2(style="font-size: 1.1em;") Web dev
-    span.badge.text-teal-dark.p-2.mx-2(style="font-size: 1.1em;") Linux
-    span.badge.text-teal-dark.p-2.mx-2(style="font-size: 1.1em;") Scripting
-    .mt-4
-      include content/introduction.pug
+  #header.container.h-100
+    h1.display-1 I'm Sam!
+    include content/introduction.pug
   
   .container
-    .row.p-4
-      .col-sm-4.text-center
-        h1.text-light #[span.text-teal-dark #]About
+    .row
+      .col-sm-4
+        h2 #[span.text-teal-dark #]About
         include content/about.pug
 
-      .col-sm-4.text-center
-        h1.text-light #[span.text-teal-dark #]What I do
+      .col-sm-4
+        h2 #[span.text-teal-dark #]What I do
         include content/what_i_do.pug
 
-      .col-sm-4.text-center
-        h1.text-light #[span.text-teal-dark #]Get in touch
+      .col-sm-4
+        h2 #[span.text-teal-dark #]Get in touch
         include content/contact.pug
 
   if isDev
