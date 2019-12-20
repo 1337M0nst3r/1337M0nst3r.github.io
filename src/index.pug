@@ -3,6 +3,7 @@ html(lang="en")
 head
   meta(charset="utf-8")
   meta(name="viewport" content="width=device-width,initial-scale=1")
+  // TODO: write more here
   meta(name="description" content="I'm Filip Samuel a.k.a. 1337M0nst3r a front-end developer.")
   meta(name="author" content="Filip Samuel")
 
@@ -22,9 +23,32 @@ head
 
   // Local styles
   link(rel="stylesheet" href="assets/styles/main.css")
+  link(rel="stylesheet" href="assets/styles/responsiveness.css")
 
 body.bg-dark.text-light.mb-1
 
+<<<<<<< HEAD
+  // Headline
+  .container-fluid.text-center.my-4
+    h1.display-1 I'm Sam
+    span.text-teal-light.border.border-teal-light.rounded.p-2.mx-2(style="font-size: 1em;") Linux
+    span.text-teal-light.border.border-teal-light.rounded.p-2.mx-2(style="font-size: 1em;") Front-end
+    span.text-teal-light.border.border-teal-light.rounded.p-2.mx-2(style="font-size: 1em;") Scripts
+  
+  // Main content
+  .container-fluid
+    .row.text-center.p-4.text-light
+      .col-12.col-md-3.my-2.border.border-secondary.p-3.rounded
+        h2.text-secondary About
+        include content/about.pug
+
+      .col-12.col-md-4.offset-md-1.my-2.border.border-secondary.p-3.rounded
+        h2.text-secondary Work
+        include content/about_work.pug
+
+      .col-12.col-md-3.offset-md-1.my-2.border.border-secondary.p-3.rounded
+        h2.text-secondary Contact
+=======
   #header.container.h-100
     h1.display-1 I'm Sam!
     include content/introduction.pug
@@ -41,6 +65,7 @@ body.bg-dark.text-light.mb-1
 
       .col-sm-4
         h2 #[span.text-teal-dark #]Get in touch
+>>>>>>> 53e58f7214592c685a627f38bfaa0bfdc16508c2
         include content/contact.pug
 
   if isDev
