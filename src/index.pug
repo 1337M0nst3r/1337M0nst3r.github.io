@@ -35,22 +35,23 @@ body.bg-dark.text-light.mb-1
     span.border.rounded.p-2.mx-2(style="font-size: 1em;") Scripts
   
   // Main content
-  .container-fluid
-    .row.text-center.p-4.text-light
-      .col-12.col-md-3.my-2.border.border-secondary.p-3.rounded
-        h2.text-teal-dark About
-        .text-left
-          include content/about.pug
+  .container
+    .row.text-center.p-2.text-light
+      .col-12.col-md-3
+        .border.border-secondary.p-3.mb-3.rounded
+          h2.text-teal-dark About
+          .text-left
+            include content/about.pug
 
-      .col-12.col-md-4.offset-md-1.my-2.border.border-secondary.p-3.rounded
+        .border.border-secondary.p-3.rounded
+          h2.text-teal-dark Contact
+          .text-left
+            include content/contact.pug
+
+      .col-12.col-md-9.border.border-secondary.p-3.rounded
         h2.text-teal-dark Work
         .text-left
           include content/work.pug
-
-      .col-12.col-md-3.offset-md-1.my-2.border.border-secondary.p-3.rounded
-        h2.text-teal-dark Contact
-        .text-left
-          include content/contact.pug
 
   if isDev
     script(src="assets/vendor/jQuery/jquery-3.4.0.min.js")
