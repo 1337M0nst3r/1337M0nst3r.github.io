@@ -12,6 +12,14 @@ body {
   min-height: 100%;
 }
 
+a {
+  color: var(--teal-dark);
+}
+
+a:hover {
+  color: var(--teal);
+}
+
 .text-teal {
   color: var(--teal) !important;
 }
