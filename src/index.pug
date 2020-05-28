@@ -1,9 +1,9 @@
 doctype html
-html(lang="en")
+html(lang="en" class="bg-dark")
 head
   meta(charset="utf-8")
   meta(name="viewport" content="width=device-width,initial-scale=1")
-  // TODO: write more here
+  //- TODO: write more here
   meta(name="description" content="I'm Filip Samuel a.k.a. 1337M0nst3r a front-end developer.")
   meta(name="author" content="Filip Samuel")
 
@@ -25,10 +25,10 @@ head
   link(rel="stylesheet" href="assets/styles/main.css")
   link(rel="stylesheet" href="assets/styles/responsiveness.css")
 
-body.bg-dark.text-light.mb-1
+body.bg-dark.text-light.mb-3
 
   // Headline
-  .container-fluid.text-center.my-4
+  .container-fluid.text-center.mb-4
     h1.display-1 I'm Sam
     span.border.rounded.p-2.mx-2(style="font-size: 1em;") Linux
     span.border.rounded.p-2.mx-2(style="font-size: 1em;") Front-end
@@ -38,20 +38,21 @@ body.bg-dark.text-light.mb-1
   .container
     .row.text-center.p-2.text-light
       .col-12.col-md-3
-        .border.border-secondary.p-3.mb-3.rounded
+        #about.border.border-secondary.p-3.mb-3.rounded
           h2.text-teal-dark About
           .text-left
             include content/about.pug
 
-        .border.border-secondary.p-3.rounded
+        #contact.border.border-secondary.p-3.mb-3.rounded
           h2.text-teal-dark Contact
           .text-left
             include content/contact.pug
 
-      .col-12.col-md-9.border.border-secondary.p-3.rounded
-        h2.text-teal-dark Work
-        .text-left
-          include content/work.pug
+      #work.col-12.col-md-9
+        .border.border-secondary.p-3.rounded
+          h2.text-teal-dark Work
+          .text-left
+            include content/work.pug
 
   if isDev
     script(src="assets/vendor/jQuery/jquery-3.4.0.min.js")
